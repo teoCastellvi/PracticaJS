@@ -47,16 +47,16 @@ function comprobar() {
 
     if (lletresCorrectes === 5) {
       document.getElementById("div4").innerHTML = "Has guanyaaaaat!!!!";
-      intents = 5;
+      intents = 5
       document.getElementById("div4").style.backgroundColor = "green";
       for (var i = 0; i < 5; i++) {
         document.getElementById("divesteriscos" + (i + 1)).innerHTML = numerorandomSplit[i];
       }
     } else{
         document.getElementById("div4").style.backgroundColor = "red";
-        }
-  }
-
+        
+  
+  console.log(intents)
   switch (intents) {
     case 1:
       document.getElementById("div4").innerHTML = "Primer intent, sort!";
@@ -74,9 +74,9 @@ function comprobar() {
       document.getElementById("div4").innerHTML = "Ja has acabat els teus intents!";
       break;
     default:
-      document.getElementById("div4").innerHTML = "Ja has acabat els teus intents!";
-  }
-}
+      document.getElementById("div4").innerHTML = "rwerwer!";
+  }}
+}}
 
 function repetir() {
     location.reload(); 
