@@ -77,3 +77,7 @@ function comprobar() {
       document.getElementById("div4").innerHTML = "Ja has acabat els teus intents!";
   }
 }
+
+function repetir() {
+    location.reload();
+}

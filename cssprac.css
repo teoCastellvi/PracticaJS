@@ -100,4 +100,19 @@
     margin-left: 1%;
     margin-top: 1%;
 }
+#div6{
+    margin-top: 1%;
+    margin-left: 35.5%;
 
+}
+#input2{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(134, 225, 247, 0.363);
+    border-color: rgba(0, 162, 255, 0.705);
+    border-radius: 10px;
+}
+
+#img1{
+    width: 30px;
+}
