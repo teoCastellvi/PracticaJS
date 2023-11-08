@@ -54,6 +54,8 @@
     border: 0;
     margin-left: 2%;
     font-size: 25px;
+    background: none;
+    color: white;
 }
 
 #divinput{
@@ -116,3 +118,10 @@
 #img1{
     width: 30px;
 }
+
+body {
+    background-image: url('IMATJES/133C.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

@@ -79,5 +79,5 @@ function comprobar() {
 }
 
 function repetir() {
-    location.reload();
+    location.reload(); 
 }
