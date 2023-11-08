@@ -1,3 +1,7 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 #titulo{
     text-align: center;
     color: blue;
@@ -17,12 +21,18 @@
     height: 100px;
     width: 800px;
     }
-#divesteriscos{
+#divesteriscos1,
+#divesteriscos2,
+#divesteriscos3,
+#divesteriscos4,
+#divesteriscos5{
     border-radius: 17%;
     background-color: rgba(0, 132, 255, 0.74);
     width: 100px;
     height: 100px;
     margin-left: 1%;
+    text-align: center;
+    font-size: 70px;
 }
 #esterisco{
     text-align: center;
@@ -66,11 +76,10 @@
     height: 50px;
     margin-left: 35.5%;
     margin-top: 1%;
-    background-color: red;
     border-radius: 5px;
     text-align: center;
     font-size: 30px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 #div5{
     flex-wrap: wrap;

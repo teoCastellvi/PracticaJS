@@ -11,25 +11,25 @@
     <h1 id="titulo">Adivina el número secreto</h1>
     <div id="div1">
         <div id="div2">
-            <div id="divesteriscos">
-                <h2 id="esterisco">*</h2>
+            <div id="divesteriscos1">
+                <h15 id="esterisco">*</h15>
             </div>
-            <div id="divesteriscos">
-                <h2 id="esterisco">*</h2>
+            <div id="divesteriscos2">
+                <h15 id="esterisco">*</h15>
             </div>
-            <div id="divesteriscos">
-                <h2 id="esterisco">*</h2>
+            <div id="divesteriscos3">
+                <h15 id="esterisco">*</h15>
             </div>
-            <div id="divesteriscos">
-                <h2 id="esterisco">*</h2>
+            <div id="divesteriscos4">
+                <h15 id="esterisco">*</h15>
             </div>
-            <div id="divesteriscos">
-                <h2 id="esterisco">*</h2>
+            <div id="divesteriscos5">
+                <h15 id="esterisco">*</h15>
             </div>
         </div>
         <div id="div3">
             <h3 id="h3div3">Escribe aquí un número</h3>
-            <input id="inputdiv3" type="number" placeholder="01234" maxlength="5">
+            <input id="inputdiv3" type="input" placeholder="01234" maxlength="5" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
             <hr width="95%" color="skyBlue">
             <div id="divinput">
                 <button id="input1" onclick="javascript:comprobar()">Comprobar</button>  
