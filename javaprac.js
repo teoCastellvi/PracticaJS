@@ -1,6 +1,6 @@
-var intents = 0;
-var lletresCorrectes = 0;
-var numerorandomSplit;
+var intents = 0; // Variable para contar el número de intentos
+var lletresCorrectes = 0; // Variable para contar el número de letras correctas adivinadas
+var numerorandomSplit; // Variable para almacenar el número aleatorio generado
 
 // Definir la función para generar un número aleatorio
 function generarNumeroAleatorio() {
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(numerorandomSplit);
 });
 
+// Función para comprobar el número ingresado por el usuario
 function comprobar() {
   lletresCorrectes = 0;
 
@@ -47,37 +48,40 @@ function comprobar() {
 
     if (lletresCorrectes === 5) {
       document.getElementById("div4").innerHTML = "Has guanyaaaaat!!!!";
-      intents = 5
+      intents = 5;
       document.getElementById("div4").style.backgroundColor = "green";
       for (var i = 0; i < 5; i++) {
         document.getElementById("divesteriscos" + (i + 1)).innerHTML = numerorandomSplit[i];
       }
-    } else{
-        document.getElementById("div4").style.backgroundColor = "red";
-        
+    } else {
+      document.getElementById("div4").style.backgroundColor = "red";
   
-  console.log(intents)
-  switch (intents) {
-    case 1:
-      document.getElementById("div4").innerHTML = "Primer intent, sort!";
-      break;
-    case 2:
-      document.getElementById("div4").innerHTML = "Segon intent, sort!";
-      break;
-    case 3:
-      document.getElementById("div4").innerHTML = "Tercer intent, sort!";
-      break;
-    case 4:
-      document.getElementById("div4").innerHTML = "Cuart intent, sort!";
-      break;
-    case 5:
-      document.getElementById("div4").innerHTML = "Ja has acabat els teus intents!";
-      break;
-    default:
-      document.getElementById("div4").innerHTML = "rwerwer!";
-  }}
-}}
+      // Mostrar mensaje de intento actual
+      console.log(intents);
+      switch (intents) {
+        case 1:
+          document.getElementById("div4").innerHTML = "Primer intent, sort!";
+          break;
+        case 2:
+          document.getElementById("div4").innerHTML = "Segon intent, sort!";
+          break;
+        case 3:
+          document.getElementById("div4").innerHTML = "Tercer intent, sort!";
+          break;
+        case 4:
+          document.getElementById("div4").innerHTML = "Cuart intent, sort!";
+          break;
+        case 5:
+          document.getElementById("div4").innerHTML = "Ja has acabat els teus intents!";
+          break;
+        default:
+          document.getElementById("div4").innerHTML = "rwerwer!";
+      }
+    }
+  }
+}
 
+// Función para reiniciar el juego
 function repetir() {
-    location.reload(); 
+  location.reload(); 
 }
